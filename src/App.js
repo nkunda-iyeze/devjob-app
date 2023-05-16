@@ -1,20 +1,8 @@
-function App() {
+const App=()=>  {
   return (
-    <div className="App">
-      <h1
-        style={{
-          height: "80vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          fontSize: "40px",
-          color: "brown",
-        }}
-      >
-        Hurray!!! Happy building
-      </h1>
-    </div>
-  );
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
 }
-
 export default App;
