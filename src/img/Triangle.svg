@@ -1,0 +1,13 @@
+<svg width="1430" height="151" viewBox="0 0 1430 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Triangle">
+<path id="Mask" d="M1440 -9H0V51C0 106.228 44.7715 151 100 151H1440V-9Z" fill="#5964E0"/>
+<mask id="mask0_0_4644" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="-9" width="1440" height="160">
+<path id="Mask_2" d="M1440 -9H0V51C0 106.228 44.7715 151 100 151H1440V-9Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_4644)">
+<path id="Triangle_2" opacity="0.0813802" fill-rule="evenodd" clip-rule="evenodd" d="M1163.89 -214.424C1185.01 -238.387 1224.21 -230.054 1233.77 -199.571L1347.88 164.592C1357.27 194.528 1330.92 223.479 1300.24 216.956L933.748 139.057C903.063 132.535 890.772 95.3715 911.518 71.8395L1163.89 -214.424Z" fill="white"/>
+<path id="Triangle Copy" opacity="0.0813802" fill-rule="evenodd" clip-rule="evenodd" d="M263.033 -329.886C259.915 -361.679 292.744 -384.666 321.553 -370.863L665.713 -205.964C694.005 -192.409 697.212 -153.398 671.514 -135.404L364.598 79.501C338.9 97.4947 303.339 81.1384 300.277 49.9171L263.033 -329.886Z" fill="white"/>
+<path id="Triangle Copy 2" opacity="0.0813802" fill-rule="evenodd" clip-rule="evenodd" d="M-71.4609 62.7414C-74.5785 30.9489 -41.7496 7.96192 -12.9407 21.7652L331.22 186.664C359.511 200.219 362.718 239.23 337.02 257.224L30.1041 472.129C4.4064 490.123 -31.1552 473.766 -34.2168 442.545L-71.4609 62.7414Z" fill="white"/>
+</g>
+</g>
+</svg>
