@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -9,7 +10,7 @@ module.exports = {
       colors: {
         lightBlue:'#5964E0',
         white:'#FFFFFF',
-        gray:'#96999e'
+        // gray:'#96999e'
       },
     },
   },
