@@ -4,7 +4,7 @@ import SearchBar from "./components/SearchBar";
 
 const App=()=>  {
   return (
-   <div className="dark:text-gray-100 dark:bg-slate-900 h-screen">
+   <div className="dark:text-gray-100 dark:bg-slate-900 h-auto">
     <Navbar/>
     <SearchBar/>
     <HeroSection/>
