@@ -59,7 +59,7 @@ const Navbar = () => {
       }
   })
   return (
-    <div style={{backgroundImage:`url(${bgPatternHeader})`}} className='flex justify-between text-center  px-36 py-10 bg-no-repeat bg-cover md:rounded-bl-full ' >
+    <div style={{backgroundImage:`url(${bgPatternHeader})`}} className='flex justify-between text-center px-20 py-10 bg-no-repeat bg-cover md:rounded-bl-full '>
         <img src={logo} alt="" />
         <div className='flex text-2xl text-white'>
             {/* <BsFillSunFill className='mx-4'/>
