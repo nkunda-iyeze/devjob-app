@@ -1,14 +1,12 @@
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import SearchBar from "./components/SearchBar";
-
+import { BrowserRouter as Router , Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 const App=()=>  {
   return (
-   <div className="dark:text-gray-100 dark:bg-slate-900 h-auto bg-slate-100" >
-    <Navbar/>
-    <SearchBar/>
-    <HeroSection/>
-   </div>
+  <Router>
+    <Routes>
+      <Route path="/" element={<Home/>}></Route>
+    </Routes>
+  </Router>
   )
 }
 export default App;
