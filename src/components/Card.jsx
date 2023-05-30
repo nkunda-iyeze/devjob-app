@@ -1,14 +1,12 @@
 import React from 'react'
-import data from '../data.json'
 // import logo from '../assets/logos/scoot.svg'
 import { ReactSVG } from 'react-svg'
-const Card = () => {
+const Card = ({searchJobs}) => {
   return ( 
-    <div className='lg:grid grid-cols-3 gap-5 px-8'>
+    <div className='lg:grid lg:grid-cols-3 gap-5 px-8'>
       {/* div one */}
       {
-        data.map((data,i)=>(
-          
+        searchJobs.map((data,i)=>(
         <div className='flex flex-col px-8 py-6  rounded-lg font-mono antialiased my-4 dark:shadow-sm dark:bg-slate-800 bg-white' key={i}>
           {/* company's logo */}
         <div className='md:-mt-12 w-14 py-6 px-2 rounded-3xl' style={{backgroundColor:`${data.logoBackground}`}} >

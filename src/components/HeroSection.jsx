@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card from './Card'
-
-const HeroSection = () => {
+import data from '../data.json'
+const HeroSection = ({
+  setJobs,searchJobs,setSearchJobs
+}) => {
+  useEffect(()=>{
+    setJobs(data);
+    setSearchJobs(data);
+  })
   return (
     <div className='container mx-auto px-20 py-10'>
-        <Card/>
+        <Card searchJobs={searchJobs} />
         
     </div>
   )

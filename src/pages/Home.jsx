@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import SearchBar from '../components/SearchBar'
 import HeroSection from '../components/HeroSection'
 
 const Home = () => {
+  const [jobs,setJobs] = useState([]);
+  const [searchJobs,setSearchJobs] = useState([]);
   return (
     <div className="dark:text-gray-100 dark:bg-slate-900 h-auto bg-slate-100" >
-        <Navbar/>
+        <Navbar />
         <SearchBar/>
-        <HeroSection/>
+        <HeroSection setJobs={setJobs} jobs={jobs} searchJobs={searchJobs} setSearchJobs={setSearchJobs}  />
         <div className='flex items-center justify-center'>
             <button className='bg-lightBlue text-white px-3 py-4 font-bold font-sans rounded'>Load More</button>
         </div>
