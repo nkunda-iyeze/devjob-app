@@ -7,12 +7,14 @@ import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
    const navigate = useNavigate()
   return (
-    <div style={{backgroundImage:`url(${bgPatternHeader})`}} className='flex justify-between text-center px-20 py-10 bg-no-repeat bg-cover cursor-pointer'>
-        <img src={logo} alt="" onClick={()=>{
+    <div style={{backgroundImage:`url(${bgPatternHeader})`}} className='md:flex md:justify-between justify-center items-center text-center px-20 py-10 bg-no-repeat bg-cover cursor-pointer'>
+        <div className='flex items-center justify-center my-12'>
+        <img  src={logo} alt="" onClick={()=>{
           navigate('/');
           window.location.reload();
         }}/>
-        <ThemedToggle/>
+        </div>
+        <ThemedToggle className="mb-12"/>
     </div>
   )
 }

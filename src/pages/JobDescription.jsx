@@ -15,24 +15,27 @@ const JobDescription = () => {
     {/* header section */}
       <header className=''>
       <div className='flex justify-center items-center dark:bg-gray-800'>
-        <div className='w-[1000px] -mt-7 shadow-xl  '>
+        <div className='w-[1000px] md:-mt-14 shadow-xl  mt-12 '>
             {/* div */}
             <div className='bg-white md:flex items-center justify-center rounded-2xl dark:bg-gray-800'>
               {/* Logo */}
              
-              <div className='md:flex py-14 px-12 text-2xl items-center justify-center' style={{backgroundColor:`${job.logoBackground}`}}>
+              <div className='hidden md:flex py-14 px-12 text-2xl items-center justify-center' style={{backgroundColor:`${job.logoBackground}`}}>
                 <ReactSVG src={job.logo}/>
-            
               </div>
               {/* job title and button wrapper */}
-              <div className='md:flex flex-1 justify-between px-10 py-4'>
-                {/* job title */}
-                <div className='flex flex-col'>
+              <div className='md:flex md:flex-1 md:justify-between justify-center items-center px-10 py-4'>
+                {/* job title  */}
+                <div className='flex flex-col items-center'>
+                  {/* display this div on small screens  */}
+                  <div className='flex justify-center items-center p-10  w-[50px] h-[60px] -mt-24 rounded-full  md:hidden' style={{backgroundColor:`${job.logoBackground}`}}>
+                  <ReactSVG src={job.logo}/>
+                  </div>
                   <p className='text-xl font-bold mb-3'>{job.company} </p>
                     <a href={job.website} className='text-gray-500'>{job.company}.com</a>
                 </div>
                 {/* button */}
-              <div className=' bg-slate-300 flex items-center justify-center px-3 py-2 rounded-lg' >
+              <div className=' bg-slate-200 flex items-center justify-center px-3 py-2 rounded-lg' >
                   <a href={job.website} className='font-bold text-lightBlue'> Company Site</a>
                  
               </div>

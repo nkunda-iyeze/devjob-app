@@ -55,7 +55,7 @@ const ThemedToggle = () => {
           }
       });
   return (
-    <div className='flex text-2xl text-white'>
+    <div className='flex justify-center items-center text-2xl text-white'>
             {
               options?.map(option =>(
                 <button key={option.text} className={`mx-4 text-3xl font-bold ${theme === option.text &&' text-slate-900'}`} onClick={()=> setTheme(option.text)}>
