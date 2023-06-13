@@ -9,7 +9,7 @@ const Footer = () => {
     const job = jobs.find(job => job.id === parseInt(id))
 
   return (
-    <div className='flex justify-center items-center dark:bg-gray-800 dark:text-white md:dark:border-t-2 bg-slate-100 py-8'>
+    <div className='flex justify-center items-center dark:bg-gray-800 dark:text-white bg-slate-100 py-8'>
         <div className='md:flex justify-between items-center py-4 w-[1000px] '>
             <div className='hidden md:flex flex-col'>
                 <p className='text-2xl font-bold '>{job.position}</p>

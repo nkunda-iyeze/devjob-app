@@ -9,12 +9,20 @@ const JobDescription = () => {
   const {id} = useParams(); 
   const {jobs} = useContext(JobContext)
   const job = jobs.find(job => job.id === parseInt(id))
-  console.log(job)
+if(!job){
   return (
-    <section className='dark:bg-gray-800 dark:text-white '>
+    <section className='md:h-screen flex items-center justify-center h-full'>
+      <p>Is Loading ....</p>
+    </section>
+  )
+}
+else{
+  
+  return (
+    <section className='dark:bg-gray-900 dark:text-white '>
     {/* header section */}
       <header className=''>
-      <div className='flex justify-center items-center dark:bg-gray-800'>
+      <div className='flex justify-center items-center dark:bg-gray-900'>
         <div className='w-[1000px] md:-mt-14 shadow-xl  mt-12 '>
             {/* div */}
             <div className='bg-white md:flex items-center justify-center rounded-2xl dark:bg-gray-800'>
@@ -72,10 +80,10 @@ const JobDescription = () => {
         {job.requirements.content}
         </p>
 
-        <ul>
+        <ul className='list-inside'>
           {
             job.requirements.items.map((item,id)=>{
-              return <li key={id} className='py-1 font-medium'>{item} </li>
+              return <li key={id} className='py-1 font-medium'><span className="list-bullet"></span>{item}</li>
             })
           }
         </ul>
@@ -83,10 +91,10 @@ const JobDescription = () => {
         <p className='my-6'>
         {job.role.content}
         </p>
-        <ol>
+        <ol className='list-decimal list-inside'>
         {
             job.role.items.map((item,id)=>{
-              return <li key={id} className='py-1 font-medium'>{item} </li>
+              return <li key={id} className='py-1 font-medium'>{item}</li>
             })
           }
         </ol>
@@ -96,6 +104,7 @@ const JobDescription = () => {
     </section>
   
   )
+}
 }
 
 export default JobDescription
